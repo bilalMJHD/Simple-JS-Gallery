@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Gallery</title>
+	<style type="text/css">
+		.thumbnails img{
+			width: 200px;
+			border-radius: 5%;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.thumbnails img:hover{
+			opacity: 1;
+		}
+		.preview img{
+			width: 720px;
+			border-radius: 1%;
+		}
+		h1{
+			font: 900 90px/1 'Source Sans Pro', Arial, sans-serif; 
+			text-transform: uppercase; 
+			color: #fff; 
+			text-align: center; 
+			letter-spacing: -3px;
+			text-shadow:     
+					 0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+		}
+	</style>
+</head>
+<body>
+	<h1>Simple Gallery</h1>
+<div class="preview" align="center">
+		<img name="preview" src="img1.jpg">
+	</div>
+	<br>
+	<div class="thumbnails" align="center">
+		<img src="optimized/img1.jpg" name="img1" onmouseover="preview.src=img1.src">
+		<img src="optimized/img2.jpg" name="img2" onmouseover="preview.src=img2.src">
+		<img src="optimized/img3.jpg" name="img3" onmouseover="preview.src=img3.src">
+		<img src="optimized/img4.jpg" name="img4" onmouseover="preview.src=img4.src">
+		<img src="optimized/img5.jpg" name="img5" onmouseover="preview.src=img5.src">
+		<img src="optimized/img6.jpg" name="img6" onmouseover="preview.src=img6.src">
+	</div>
+	
+
+</body>
+</html>
